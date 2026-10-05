@@ -104,6 +104,7 @@ font-weight: lighter;
          align-items: center;
          width: 100%;
          object-fit: cover;
+         height: auto;
     }
     .text-box{
         margin: auto;
@@ -114,10 +115,11 @@ font-weight: lighter;
         flex-direction: column;
         padding: 6px 0px;
         width: auto;
+        text-align: center;
     }
     .navlinks ul li a{
-        font-size: 17px;
-        padding: 13px 0px;
+        font-size: 16px;
+        padding:0px 0px;
         text-align: center;
         align-items: center;
     }
@@ -131,30 +133,33 @@ font-weight: lighter;
     .navright a{
         align-items: center;
         text-align: center;
-        font-size: 17px;
+        font-size: 16px;
     }
     .navright a button{
-        font-size: 16px;
-        height: 26px;
+        font-size: 15px;
+        text-align: center;
+        height: 24px;
+        width: 70px;
     }
     
     .text-box{
-   padding-top: 40px;
-   padding-left: 25px;
+   padding-top: 10px;
+   padding-left: 19px;
 }
 .text-box p{
-    font-size: 18px;
+    font-size: 17px;
     color: #FFFFFF;
+    width: 90%;
 }
 .text-box h1{
 font-family: "Clicker Script", cursive;
 color: #FFFFFF;
-font-size:90px;
+font-size:80px;
 font-weight: lighter;
 }
 .hero-btn button{
-    width: 134px;
-    height: 38px;
+    width: 94px;
+    height: 32px;
     border-radius: 24px;
     background-color:#F9C06A ;
     border: none;
@@ -169,15 +174,12 @@ font-weight: lighter;
 
 /* discover */
 .discover{
-    width: 80%;
-    min-height: 100vh;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    padding:  100px 90px 0px 90px;
+    justify-content: space-around;
+    padding-top: 100px;
 }
-.disleft{
-    align-items: center;
-}
+
 .disleft-1 h1{
     font-size: 54px;
     color: #603809;
@@ -199,10 +201,12 @@ font-weight: lighter;
 }
 .disleft img{
     margin-left: -210px;
+    margin-top: -40px;
+    width: 410px;
+    height: auto;
 }
 .disright img{
     align-items: center;
-    margin-top: -40px;
 }
 
 @media (max-width: 700px){
@@ -224,13 +228,14 @@ font-weight: lighter;
 
 .disleft-1 p{
     color: #707070;
-    font-size: 17px;
-    padding: 18px 0px;
+    font-size: 16px;
+    padding: 19px 0px;
+    width: 90%;
 }
 .disleft-1 button{
     padding: 0px 0px;
-    width: 124px;
-    height: 44px;
+    width: 94px;
+    height: 34px;
     text-align: center;
     border-radius: 24px;
     border: none;
@@ -238,17 +243,23 @@ font-weight: lighter;
     font-size: 15px;
 }
 .disleft img{
-    margin-left: -210px;
-    width: auto;
+    margin-left: -90px;
+    margin-top: -40px;
+    width: 270px;
+    height: auto;
 }
 .disright img{
     align-items: center;
-    margin-top: -40px;
+    width: 90%;
+   
 }
 }
 /* products */
 .products{
-    min-height: 100vh;
+    width: 90%;
+    padding-top: 0px;
+    margin: 0 auto;
+    display: grid;
 }
 .products h1{
     color: #603809;
@@ -264,33 +275,34 @@ font-weight: lighter;
 }
 .prodbox{
     display: flex;
-    gap: 30px;
     flex-wrap: wrap;
+    text-align: center;
     align-items: center;
-    justify-content: space-around;
-    padding: 40px 0px 0px 0px ;
+    justify-content: space-evenly;
+    padding: 50px 0px 0px 0px ;
 }
 .box-1{
     background-color: #FFF9F1;
+     text-align: center;
 }
 .box-1 h3{
     text-align: center;
     font-size: 22px;
     color: #707070;
+    padding-top: 13px;
 }
 .box-1 h4{
     color: #1E1E1E;
     text-align: center;
     font-weight: normal;
     font-size: 16px;
+    padding-top: 6px;
 }
 .box-1 h6{
     text-align: center;
     font-size: 18px;
     color: #707070;
-}
-.box-1  {
-    text-align: center;
+     padding-top: 6px;
 }
 .box-1 a button{
     font-size: 16px;
@@ -300,13 +312,175 @@ font-weight: lighter;
     border-radius: 24px;
     border: none;
     background-color: #F9C06A;
+    cursor: pointer;
 }
 @media(max-width:700px){
 
+    .products{
+    min-height: 0vh;
+    width: 100%;
+}
+.prodbox{
+    gap: 40px;
+}
     .products h1{
         font-size: 32px;
+          width: 97%;
     }
     .products p{
         font-size: 16px;
+        width: 97%;
     }
+}
+
+/* different */
+.different{
+    width: 100%;
+    margin: 60px auto;
+    text-align: center;
+    position: relative;
+    overflow-x: hidden;
+    display: grid;
+}
+.different h2{
+    font-size: 54px;
+    margin-bottom: 15px;
+    color: #603809;
+}
+.diffcont{
+    position: relative;
+    width: 100%;
+}
+.diffcont p{
+    margin: 0;
+    font-size: 20px;
+    color: #707070;
+}
+.diffcont img{
+    position: absolute;
+    right: -80px;
+    top: -140px;
+    width: 410px;
+    height: auto;
+}
+.diffbottom{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    padding-top: 55px;
+    margin: 0 auto;
+    /* gap: 33px; */
+}
+.card-1{
+    background-color: #FFF9F1;
+    border: 1px solid wheat;
+    width: 280px;
+    height: 284px;
+    text-align: center;
+    align-items: center;
+}
+.card-1:hover{
+    background-color: #FFEED8;
+}
+.card-1 img{
+    padding-top: 28px;
+}
+.card-1 h2{
+    font-size: 28px;
+    color: #603809;
+    padding: 18px 18px 0px 18px;
+}
+.card-1 p{
+    font-size: 20px;
+    padding: 0px 10px 17px 10px;
+    color: #707070;
+}
+
+@media(max-width:700px){
+
+    .different{
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+    .different h2{
+        font-size: 32px;
+    }
+    .diffcont p{
+    margin: 30px 0px 0px 0px;
+    font-size: 17px;
+}
+.diffcont img{
+    position: absolute;
+    right: -40px;
+    top: -55px;
+    width: 210px;
+    height: auto;
+}
+.diffbottom{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    padding-top: 55px;
+    margin: 0 auto;
+     display: grid;
+}
+.card-1{
+    background-color: #FFF9F1;
+    width:100%;
+    height: auto;
+    text-align: center;
+    align-items: center;
+}
+.card-1 h2{
+    font-size: 25px;
+}
+.card-1 p{
+    font-size: 17px;
+}
+}
+
+
+/* get-started */
+.get-started{
+    text-align: center;
+}
+.get-started p{
+    font-size: 20px ;
+    color: #707070;
+    text-align: center;
+}
+.get-started h2{
+    font-size: 30px;
+    color: #603809;
+}
+.get-started button {
+    width: 128px;
+    height: 38px;
+    margin-top: 17px;
+    border-radius: 24px;
+    background-color: #F9C06A;
+    font-size: 16px;
+    border: none;
+}
+.get-started button a{
+    text-decoration: none;
+    color: #1E1E1E;
+    font-weight: 700;
+}
+
+
+/* Order */
+.Order{
+      min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(to left, rgba(41, 26, 26, 0.8)),url(image/pg5-1.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
 }
